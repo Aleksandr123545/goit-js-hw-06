@@ -7,20 +7,17 @@ class StringBuilder {
   getValue() {
     return this.#value;
   }
-  setValue() {
-    this.#value = new StringBuilder();
+
+  padStart(str) {
+    this.#value = str + this.#value;
   }
 
-  padStart(a) {
-    this.#value = a + this.#value;
+  padEnd(str) {
+    this.#value = this.#value + str;
   }
 
-  padEnd(b) {
-    this.#value = this.#value + b;
-  }
-
-  padBoth(c) {
-    this.#value = c + this.#value + c;
+  padBoth(str) {
+    this.#value = str + this.#value + str;
   }
 }
 
