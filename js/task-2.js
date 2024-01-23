@@ -7,9 +7,7 @@ class Storage {
   getItems() {
     return this.#items;
   }
-  // setItems(newItems) {
-  //   this.#items = new Storage();
-  // }
+
   addItem(newItem) {
     return this.#items.push(newItem);
   }
