@@ -7,15 +7,15 @@ class Storage {
   getItems() {
     return this.#items;
   }
-  setItems(newItems) {
-    this.#items = new Storage();
-  }
+  // setItems(newItems) {
+  //   this.#items = new Storage();
+  // }
   addItem(newItem) {
     return this.#items.push(newItem);
   }
   removeItem(remItem) {
     this.#items = this.#items.filter((n) => {
-      return n != remItem;
+      return n !== remItem;
     });
   }
 }
